@@ -1,0 +1,35 @@
+nav{
+    z-index: 10000;
+    -webkit-text-fill-color: inherit;
+    mix-blend-mode: normal;
+    background-image: none;
+    background-size: auto;
+    background-clip: border-box;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    background-color:#ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+li{
+    list-style: none;   
+    color:#6200ee;
+    font-weight:bold;
+    font-size:25px;
+}
+.flex{
+    display:flex;
+}
+.justify-content-between{
+justify-content: space-between;
+}
+.align-items-between{
+align-items:space-between;
+}
+ul{
+    width: 90%;
+}

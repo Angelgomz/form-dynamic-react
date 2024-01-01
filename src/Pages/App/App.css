@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color:#f0f0f0;
+  }
+  .wrapped{
+    margin-top:4.5%;
+}
+body::-webkit-scrollbar {
+  width: 20px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6200ee;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+
+}
