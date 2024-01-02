@@ -25,7 +25,7 @@ Currently, two official plugins are available:
 <strong> Installation via GITHUB </string>
 ```shell script
 $ git clone https://github.com/Angelgomz/form-dynamic-react 
-$ cd form-dinamyic-react
+$ cd form-dynamic-react
 $ npm install 
 $ npm run dev
 ```
