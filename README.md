@@ -11,18 +11,18 @@ Currently, two official plugins are available:
 ```shell script
 ├── form-dynamic-reac
 │   ├── src
-│     ├── Components
-|     ├── Context
-|     ├── Pages
-|   |-index.css
-|   |-main.jsx 
+│     ├── components
+|     ├── context
+|     ├── pages
+|   |index.css
+|   |main.jsx 
 ├── index.html
 ├── package.json
 ├── vite.config.js
 ├── README.md
 ```
 # SET UP 
-<strong> ** Installation via GITHUB </string>
+<strong> Installation via GITHUB </string>
 ```shell script
 $ git clone https://github.com/Angelgomz/form-dynamic-react 
 $ cd form-dinamyic-react
