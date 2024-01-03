@@ -32,10 +32,10 @@ const ModalFinish = () => {
           <Typography id="modal-modal-title" variant="h6" component="h2">
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            {context.data.length > 0 ? context.data.map(function(formDat) {
+            {context.data.length > 0 ? context.data.map(function(formDat,i) {
               return (
                   <>
-                  <Box>
+                  <Box key={i}>
                          <>
                           <h4><strong>{formDat.label}</strong></h4>
                           <h5><strong>Respuesta: {formDat.value}</strong></h5>

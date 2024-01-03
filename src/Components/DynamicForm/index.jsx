@@ -94,10 +94,9 @@ const DynamicForm = () => {
           );
           break;
         case "select":
-          element.options.map((option) => {
+          element.options.map((option,i) => {
             menuItemOptions.push(
-              <MenuItem key={option} value={option}>
-                {" "}
+              <MenuItem key={i} value={option}>
                 {option}
               </MenuItem>
             );
@@ -106,6 +105,7 @@ const DynamicForm = () => {
             <TextField
               className="w-100"
               select
+              defaultValue = ""
               onChange={(e) => handleChange(e, element.label, section)}
               label={element.label}
               name={element.name}
@@ -115,10 +115,10 @@ const DynamicForm = () => {
           );
           break;
         case "radio":
-          element.options.map((option) => {
+          element.options.map((option,i) => {
             radioGroupOptions.push(
               <FormControlLabel
-                key={option}
+                key={i}
                 value={option}
                 control={<Radio />}
                 label={option}
@@ -155,12 +155,10 @@ const DynamicForm = () => {
     <Grid container spacing={2}>
        <Grid item xs={12} sm={6}>
           <form onSubmit={handleSubmit}>
-            {formData.map(function (formDat, i) {
+            {formData.map(function (formDat,i) {
               return (
-                <Card className="card" variant="outlined" key={i}>
-                    <p className="title" key={formDat.id}>
-                      Sección {formDat.id}
-                    </p>
+                <Card key={i} className="card" variant="outlined">
+                    <p className="title"> Sección {formDat.id} </p>
                       {getElements(formDat.elements, formDat.id)}
                 </Card>
               );
@@ -170,8 +168,8 @@ const DynamicForm = () => {
     <Grid item xs={11} sm={6} data-aos="fade-up">
             <div className="instructions">
               <p className="title-instructions"><strong>Instrucciones: </strong></p>
-                <text> En caso de añadir un JSON para agregar más en un input debe poseer la propiedad elements.
-                </text>
+                <p> En caso de añadir un JSON para agregar más en un input debe poseer la propiedad elements.
+                </p>
             </div>
     </Grid>
     </Grid>
